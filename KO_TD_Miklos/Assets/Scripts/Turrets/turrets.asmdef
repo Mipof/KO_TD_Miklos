@@ -1,0 +1,16 @@
+{
+    "name": "turrets",
+    "rootNamespace": "",
+    "references": [
+        "GUID:fd28b1cc1b8ac4279b184a2026ccdda4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
