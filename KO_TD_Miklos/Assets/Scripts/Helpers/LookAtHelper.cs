@@ -20,6 +20,7 @@ public static class LookAtHelper
     private static Quaternion GetLookAtPos(Transform obj, Transform target)
     {
         Vector3 direction = target.position - obj.position;
+        if(direction == Vector3.zero){return Quaternion.identity;}
         return Quaternion.LookRotation(direction);
         
         

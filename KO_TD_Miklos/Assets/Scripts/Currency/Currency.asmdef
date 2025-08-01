@@ -1,0 +1,17 @@
+{
+    "name": "Currency",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b82f910a03d89402ab16fccd326bca50",
+        "GUID:da7080cd6eea7469b89aa4b36f66450d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

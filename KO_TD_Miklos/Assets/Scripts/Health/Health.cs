@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -11,7 +9,7 @@ public class Health : MonoBehaviour
     [SerializeField] private float _currentHealth;
     [SerializeField] private bool _hasDelayForDamage = false;
     [SerializeField] [Min(0)] [Tooltip("If 'hasDelayForDame' is false, this value will not have effect")] 
-    private float timeDelayForDame = 0.5f;
+    private float timeDelayForDamage = 0.5f;
 
     [Header("EVENTS")] [Space(15)] 
     [SerializeField] private UnityEvent OnZeroHealth;
@@ -48,5 +46,13 @@ public class Health : MonoBehaviour
         if(!canBeHealed)return;
         OnGetHealed?.Invoke(heal);
         _currentHealth = Math.Min(_maxHealth, _currentHealth + heal);
+    }
+
+    public void DamageForCollision(GameObject obj)
+    {
+        if (obj.TryGetComponent(out CollisionDamage collisionDamage))
+        {
+            GetDamage(collisionDamage._damageForCollision);
+        }
     }
 }

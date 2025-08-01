@@ -1,0 +1,16 @@
+{
+    "name": "WaveManager",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ab78ce03ed6d94f0aa6bbe40bff2f137"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
