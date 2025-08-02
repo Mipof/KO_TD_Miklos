@@ -18,6 +18,10 @@ MonoBehaviour:
     _qty: 7
     _delayBetweenEnemies: 0.5
   - _delayBeforeStart: 2
-    _enemyType: 0
+    _enemyType: 2
+    _qty: 3
+    _delayBetweenEnemies: 0.5
+  - _delayBeforeStart: 1
+    _enemyType: 1
     _qty: 10
     _delayBetweenEnemies: 0.5

@@ -154,6 +154,10 @@ MonoBehaviour:
   EnemyPrebabs:
   - enemy: 0
     enemyPrefab: {fileID: 3129254416973444119, guid: 4dc4dfc1187e0497f9dfd4145edd7605, type: 3}
+  - enemy: 1
+    enemyPrefab: {fileID: 3129254416973444119, guid: bdb2f8d3716bd4ee89ddc3e71e9c2056, type: 3}
+  - enemy: 2
+    enemyPrefab: {fileID: 3129254416973444119, guid: 0df279aa9b4e34cd1b518159544b8b30, type: 3}
 --- !u!4 &800684957
 Transform:
   m_ObjectHideFlags: 0

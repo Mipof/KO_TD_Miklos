@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turret:
     type: 0
-    turretName: Simple
+    turretName: Not simple turret
     cost: 50
     delayFirstShot: 0.5
     delayNextShot: 1

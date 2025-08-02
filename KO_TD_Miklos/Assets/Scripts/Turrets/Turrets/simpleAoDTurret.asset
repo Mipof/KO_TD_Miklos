@@ -20,8 +20,8 @@ MonoBehaviour:
     delayNextShot: 1
     damagePerShot: 100
     maxEnemies: 5
-    canBeUpgraded: 0
-    upgradedTurret: {fileID: 0}
+    canBeUpgraded: 1
+    upgradedTurret: {fileID: 11400000, guid: ef5e733874c014b63a4b17e7b259337c, type: 2}
     isUpgradeFromOther: 0
     prefab: {fileID: 2844680200987651339, guid: 6438422aa5cc040569623ffd03b850f7, type: 3}
     sellReturn: 20

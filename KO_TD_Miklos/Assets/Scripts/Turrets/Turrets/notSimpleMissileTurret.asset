@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d31ede5df85e4ff2a786666e85b28afd, type: 3}
-  m_Name: simpleTurret
+  m_Name: notSimpleMissileTurret
   m_EditorClassIdentifier: 
   turret:
-    type: 0
-    turretName: Simple Turret
+    type: 1
+    turretName: Not Simple Missile Turret
     cost: 30
-    delayFirstShot: 0.5
+    delayFirstShot: 1
     delayNextShot: 1
-    damagePerShot: 10
+    damagePerShot: 0
     maxEnemies: 1
-    canBeUpgraded: 1
-    upgradedTurret: {fileID: 11400000, guid: d9ded9c757f13445a86aa42b2d4ffeef, type: 2}
-    isUpgradeFromOther: 0
-    prefab: {fileID: 2844680200987651339, guid: 90d44bee9c3d44b90a709b78e17da5ac, type: 3}
+    canBeUpgraded: 0
+    upgradedTurret: {fileID: 0}
+    isUpgradeFromOther: 1
+    prefab: {fileID: 2844680200987651339, guid: dc5ceb8153c3e4d72be6130e2027079c, type: 3}
     sellReturn: 20

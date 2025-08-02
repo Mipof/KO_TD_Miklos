@@ -75,7 +75,6 @@ public class TurretBase : MonoBehaviour
 
     private void OnMouseDown()
     {
-        print("click");
         OnClick?.Invoke(this);
     }
 }
