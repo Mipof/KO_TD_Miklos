@@ -21,7 +21,7 @@ MonoBehaviour:
     damagePerShot: 0
     maxEnemies: 1
     canBeUpgraded: 1
-    upgradedTurret: {fileID: 11400000}
+    upgradedTurret: {fileID: 11400000, guid: 78b314500975144afa312687e262bab1, type: 2}
     isUpgradeFromOther: 0
     prefab: {fileID: 2844680200987651339, guid: e0735cc0529634e40a73794be6b8cfca, type: 3}
     sellReturn: 20

@@ -30,6 +30,7 @@ public class TargetSelection : MonoBehaviour
         Transform target = null;
         if (targetList.Count > 0)
         {
+            if(!targetList[0]){return;}
             target = targetList[0].transform;
         }
         

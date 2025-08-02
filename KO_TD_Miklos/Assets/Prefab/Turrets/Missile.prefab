@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  _treshold: 0
+  threshold: 0
   OnStartFollow:
     m_PersistentCalls:
       m_Calls:
@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab801e0d3dd4d63869bddb586ece8fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _time: 2
+  _time: 3
   OnTimeFinished:
     m_PersistentCalls:
       m_Calls:
