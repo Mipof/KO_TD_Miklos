@@ -15,5 +15,9 @@ MonoBehaviour:
   waves:
   - _delayBeforeStart: 0
     _enemyType: 0
-    _qty: 2
-    _delayBetweenEnemies: 3
+    _qty: 7
+    _delayBetweenEnemies: 0.5
+  - _delayBeforeStart: 2
+    _enemyType: 0
+    _qty: 10
+    _delayBetweenEnemies: 0.5

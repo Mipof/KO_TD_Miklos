@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-
+/// <summary>
+/// GUI Carrousel of all -simple- turrets allowed to this level. in turrent manager can add/remove turrets for this level
+/// </summary>
 public class TurretCarrousel : MonoBehaviour
 {
     [SerializeField] private GameObject _prefab;

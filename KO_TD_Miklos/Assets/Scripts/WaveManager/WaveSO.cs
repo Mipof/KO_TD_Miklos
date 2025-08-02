@@ -7,7 +7,7 @@ public class WaveSO : ScriptableObject
     public struct Wave
     {
         public float _delayBeforeStart;
-        public EnemyEnum _enemyType;
+        public EnemyTypes _enemyType;
         public int _qty;
         public float _delayBetweenEnemies;
     }

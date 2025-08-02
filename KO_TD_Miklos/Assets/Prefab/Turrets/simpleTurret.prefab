@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 3177548729903205388}
   - component: {fileID: 2777362776159379386}
   - component: {fileID: 8757119103294490694}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: RangeZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,8 +149,8 @@ Transform:
   m_GameObject: {fileID: 2802501290276831290}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4.32}
-  m_LocalScale: {x: 20.178143, y: 1, z: 8.651503}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 25.979359, y: 1, z: 14.599411}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4948512174853507550}
@@ -271,6 +271,7 @@ MonoBehaviour:
   OnStay:
     m_PersistentCalls:
       m_Calls: []
+  DisableAfterCollision: 0
   _tagList:
   - Enemy
 --- !u!1 &2844680200987651339
@@ -454,6 +455,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnMultipleTargetChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &404729506573462853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,6 +500,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _missilePrefab: {fileID: 0}
 --- !u!114 &-8646544125646651131
 MonoBehaviour:
   m_ObjectHideFlags: 0

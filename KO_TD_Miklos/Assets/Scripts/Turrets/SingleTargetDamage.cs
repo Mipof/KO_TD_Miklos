@@ -64,9 +64,11 @@ public class SingleTargetDamage : MonoBehaviour
                 continue; 
             }
             yield return new WaitForSeconds(data.turret.delayFirstShot);
+            //target changed as false to enetry while. When target changed, targetChange will come true and exit the 
+            //loop, to change a new target
+            targetChanged = false;
             while (currentTarget && !targetChanged)
             {
-                targetChanged = false;
                 ShootAction();
                 OnFire?.Invoke();
 
@@ -83,7 +85,6 @@ public class SingleTargetDamage : MonoBehaviour
 
     public void Initialize(TurretDataSO _data)
     {
-        print("a");
         data = _data;
         routine = StartCoroutine(ShootRoutine());
     }

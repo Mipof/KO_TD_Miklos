@@ -22,9 +22,11 @@ public class TurretBase : MonoBehaviour
             turret = ScriptableObject.CreateInstance<TurretDataSO>();
         }
         _currentTurretData = turret.turret;
-        ChangeGO();
+        DeleteGO();
+        SetNewGo();
     }
 
+    //create new GO, add listeners and set on top of the base
     private void SetNewGo()
     {
         if(currentTurret == null){return;}
@@ -44,7 +46,8 @@ public class TurretBase : MonoBehaviour
         SetOnTopOfGo.SetOnTop(gameObject, curretGO);
     }
 
-    private void ChangeGO()
+    //Delete current turret GO and remove all listeners 
+    private void DeleteGO()
     {
         if (curretGO || currentTurret == null)
         {
@@ -63,7 +66,6 @@ public class TurretBase : MonoBehaviour
                 return;
             }
         }
-        SetNewGo();
     }
 
     public TurretDataSO GetTurretData()

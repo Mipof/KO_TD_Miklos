@@ -16,6 +16,7 @@ public class TurretDataSO : ScriptableObject
         public TurretDataSO upgradedTurret;
         public bool isUpgradeFromOther;
         public GameObject prefab;
+        public int sellReturn;
 
     }
 

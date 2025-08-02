@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-
+/// <summary>
+/// Will handle the list of current enemies in radius and notify every change
+/// </summary>
 public class TurretTracking : MonoBehaviour
 {
     [Header("EVENTS")] [Space(15)]

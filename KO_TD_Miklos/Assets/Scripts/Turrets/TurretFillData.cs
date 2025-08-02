@@ -22,7 +22,6 @@ public class TurretFillData : MonoBehaviour
 
     public void OnCLick()
     {
-        print("buying on canva");
         BuyTurret?.Invoke(turret);
     }
 }

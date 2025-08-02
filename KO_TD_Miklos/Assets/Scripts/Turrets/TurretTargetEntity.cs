@@ -1,7 +1,9 @@
 
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Entity build to pass turret list of detected enemies through an event
+/// </summary>
 public class TurretTargetEntity
 {
     public TurretType type;

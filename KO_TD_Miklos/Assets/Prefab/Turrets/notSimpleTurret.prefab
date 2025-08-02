@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 3177548729903205388}
   - component: {fileID: 2777362776159379386}
   - component: {fileID: 8757119103294490694}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: RangeZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,8 +149,8 @@ Transform:
   m_GameObject: {fileID: 2802501290276831290}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1067, y: -0, z: 6.0986}
-  m_LocalScale: {x: 32.67702, y: 1, z: 13.087865}
+  m_LocalPosition: {x: -0.1067, y: -0, z: -0.16}
+  m_LocalScale: {x: 32.67702, y: 1, z: 20.44979}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4948512174853507550}
@@ -271,6 +271,7 @@ MonoBehaviour:
   OnStay:
     m_PersistentCalls:
       m_Calls: []
+  DisableAfterCollision: 0
   _tagList:
   - Enemy
 --- !u!1 &2844680200987651339
@@ -454,6 +455,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnMultipleTargetChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &404729506573462853
 MonoBehaviour:
   m_ObjectHideFlags: 0

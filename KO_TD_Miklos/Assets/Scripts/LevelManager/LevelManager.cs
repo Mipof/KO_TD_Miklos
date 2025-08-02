@@ -12,14 +12,12 @@ public class LevelManager : MonoBehaviour
     private ScenesManager SM;
     public void GameLose()
     {
-        print("you lose the game");
         Time.timeScale = 0f;
         _loseView.SetActive(true);
     }
 
     public void YouWin()
     {
-        print("you win");
         Time.timeScale = 0f;
         _winView.SetActive(true);
     }
@@ -32,17 +30,12 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void ToMainMenu()
-    {
-        SM.UnloadAScene(SceneEnum.HomeScene);
-        
-    }
-
     private void Start()
     {
         waves = FindObjectsOfType<RunWave>();
         foreach (RunWave wave in waves)
         {
+            //set a listener to all wave routines when completed
             wave._waveComplete.AddListener(WaveCompleted);
         }
 
@@ -58,11 +51,13 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
+        //Will check first if the waves already finish, next, check if still enemies in the scene
         if(wavesCompleted < waves.Length){return;}
 
         if (_enemiesParent.childCount == 0)
         {
             YouWin();
+            //for entry only once
             wavesCompleted = -1;
         }
     }

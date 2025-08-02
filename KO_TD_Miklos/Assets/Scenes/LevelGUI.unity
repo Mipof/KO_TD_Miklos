@@ -286,7 +286,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sellTurret: {fileID: 606935332}
+  _sellText: {fileID: 2145385165}
   _upgradeTuret: {fileID: 871301960}
+  _upgradeText: {fileID: 579375943}
   _carrousel: {fileID: 393439753}
   _closeBtn: {fileID: 263058631}
 --- !u!1 &263058631

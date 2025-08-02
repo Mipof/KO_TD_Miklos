@@ -24,3 +24,4 @@ MonoBehaviour:
     upgradedTurret: {fileID: 0}
     isUpgradeFromOther: 0
     prefab: {fileID: 2844680200987651339, guid: e0735cc0529634e40a73794be6b8cfca, type: 3}
+    sellReturn: 20

@@ -11,17 +11,23 @@ public class Health : MonoBehaviour
     [SerializeField] [Min(0)] [Tooltip("If 'hasDelayForDame' is false, this value will not have effect")] 
     private float timeDelayForDamage = 0.5f;
 
+    [Header("CONFIG")] [Space(15)] [Tooltip("If you will initialize this values")]
+    [SerializeField] private bool willBeInitialized = false;
+
     [Header("EVENTS")] [Space(15)] 
     [SerializeField] private UnityEvent OnZeroHealth;
     [SerializeField] private UnityEvent<float> OnGetDamaged;
     [SerializeField] private UnityEvent<float> OnGetHealed;
+    [SerializeField] private UnityEvent<int> OnHealthInitialized;
 
     private bool canGetDamaged = true;
     private bool canBeHealed = true;
 
     private void Start()
     {
+        if(willBeInitialized){return;}
         _currentHealth = _maxHealth;
+        OnHealthInitialized?.Invoke((int)_maxHealth);
     }
 
     private void CheckIfStillAlive()
@@ -46,6 +52,14 @@ public class Health : MonoBehaviour
         if(!canBeHealed)return;
         OnGetHealed?.Invoke(heal);
         _currentHealth = Math.Min(_maxHealth, _currentHealth + heal);
+    }
+
+    public void Initialize(float newMaxhelth)
+    {
+        _maxHealth = newMaxhelth;
+        _currentHealth = _maxHealth;
+        OnHealthInitialized?.Invoke((int)_maxHealth);
+        
     }
 
     public void DamageForCollision(GameObject obj)

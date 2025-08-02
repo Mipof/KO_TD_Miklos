@@ -1,7 +1,9 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
+/// <summary>
+/// Not working yet
+/// </summary>
 public class MeshBlink : MonoBehaviour
 {
     [SerializeField] private bool _blinkOnce = true;

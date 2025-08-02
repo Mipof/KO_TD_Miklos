@@ -1,5 +1,7 @@
 using UnityEngine;
-
+/// <summary>
+/// Entity build for send GO and damage through event
+/// </summary>
 [System.Serializable]
 public class DamageGoEntity
 {

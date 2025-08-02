@@ -1,5 +1,7 @@
 using UnityEngine;
-
+/// <summary>
+/// Set a GO over another GO. Will check height of both and will calculate new pos
+/// </summary>
 public static class SetOnTopOfGo
 {
     public static void SetOnTop(GameObject baseGO, GameObject topGO)
