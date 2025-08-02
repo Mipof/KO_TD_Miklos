@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 6806896902796761365}
   - component: {fileID: 8894201317200415317}
   - component: {fileID: 5057690416054940618}
+  - component: {fileID: 1186541725955545397}
   m_Layer: 0
   m_Name: SimpleEnemy
   m_TagString: Enemy
@@ -259,7 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f038efe0c67aa4e378be25d4c144a887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 4.8
   _waypointThreshold: 0.1
   OnTargetChange:
     m_PersistentCalls:
@@ -326,6 +327,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damageForCollision: 10
+  damage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1186541725955545397}
+        m_TargetAssemblyTypeName: DamageTarget, Health
+        m_MethodName: DamageGO
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6806896902796761365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,6 +373,18 @@ MonoBehaviour:
   OnGOEnter:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: -1154149083280198771}
+        m_TargetAssemblyTypeName: CollisionDamage, Health
+        m_MethodName: CreateDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 6806896902796761365}
         m_TargetAssemblyTypeName: DestroyGO, Generic
         m_MethodName: DestroyThisGO
@@ -372,6 +400,10 @@ MonoBehaviour:
   OnGoExit:
     m_PersistentCalls:
       m_Calls: []
+  OnStay:
+    m_PersistentCalls:
+      m_Calls: []
+  DisableAfterCollision: 1
   _tagList:
   - HQ
 --- !u!114 &5057690416054940618
@@ -387,3 +419,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationSpeed: 5
+--- !u!114 &1186541725955545397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3129254416973444119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf88d50518bb4a1090f31b7f4a7e751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -12,6 +12,7 @@ public class TargetSelection : MonoBehaviour
         switch (entity.type)
         {
             case TurretType.SINGLE:
+            case TurretType.MISSILE:
                 SetNewSingleTarget(entity.listOfTargets);
                 break;
             case TurretType.MULTIPLE:

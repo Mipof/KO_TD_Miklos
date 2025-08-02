@@ -22,7 +22,5 @@ public static class LookAtHelper
         Vector3 direction = target.position - obj.position;
         if(direction == Vector3.zero){return Quaternion.identity;}
         return Quaternion.LookRotation(direction);
-        
-        
     }
 }

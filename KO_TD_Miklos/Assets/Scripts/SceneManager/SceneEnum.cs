@@ -3,5 +3,8 @@ public enum SceneEnum
 {
     MainScene,
     HomeScene,
-    FirstLeveScene
+    FirstLeveScene,
+    LevelGUI,
+    SecondLevelScene,
+    ThirdLevelScene
 }

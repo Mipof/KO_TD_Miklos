@@ -6,7 +6,6 @@ public class ScenesManager : MonoBehaviour
 {
     public void LoadAScene(SceneEnum scene)
     {
-        print(scene.ToString());
         SceneManager.LoadSceneAsync(scene.ToString(), LoadSceneMode.Additive);
     }
 

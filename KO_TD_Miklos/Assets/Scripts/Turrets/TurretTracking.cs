@@ -2,17 +2,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Turret_test2 : MonoBehaviour
+public class TurretTracking : MonoBehaviour
 {
-    [Header("STATS")][Space(15)]
-    [SerializeField] private TurretType _turretType;
-
-    [SerializeField] [Tooltip("if type is 'SINGLE' this value will have no effect")]
-    private int _maxTargets = 1;
-    
     [Header("EVENTS")] [Space(15)]
     [SerializeField] private UnityEvent<TurretTargetEntity> OnTargetChanged;
-
+    
+    private bool isReady = false;
+    private TurretDataSO data;
     private Quaternion init;
     private List<GameObject> _detectedEnemies = new List<GameObject>();
     
@@ -25,6 +21,12 @@ public class Turret_test2 : MonoBehaviour
             dg.OnDestoy.AddListener(RemoveEnemyFromTrackList);
         }
         SelectCurrentTarget();
+    }
+
+    public void Initialize(TurretDataSO _data)
+    {
+        data = _data;
+        isReady = true;
     }
 
     public void RemoveEnemyFromTrackList(GameObject enemy)
@@ -40,7 +42,8 @@ public class Turret_test2 : MonoBehaviour
 
     private void SelectCurrentTarget()
     {
-        TurretTargetEntity entity = new TurretTargetEntity(_turretType, _detectedEnemies, _maxTargets);
+        if(!isReady){return;}
+        TurretTargetEntity entity = new TurretTargetEntity(data.turret.type, _detectedEnemies, data.turret.maxEnemies);
         OnTargetChanged?.Invoke(entity);
     }
 }

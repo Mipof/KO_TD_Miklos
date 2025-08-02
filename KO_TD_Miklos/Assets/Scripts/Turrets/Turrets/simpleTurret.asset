@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31ede5df85e4ff2a786666e85b28afd, type: 3}
+  m_Name: simpleTurret
+  m_EditorClassIdentifier: 
+  turret:
+    type: 0
+    turretName: Simple
+    cost: 30
+    delayFirstShot: 0.5
+    delayNextShot: 1
+    damagePerShot: 10
+    maxEnemies: 1
+    canBeUpgraded: 1
+    upgradedTurret: {fileID: 11400000, guid: d9ded9c757f13445a86aa42b2d4ffeef, type: 2}
+    isUpgradeFromOther: 0
+    prefab: {fileID: 2844680200987651339, guid: 90d44bee9c3d44b90a709b78e17da5ac, type: 3}
